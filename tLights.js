@@ -4,10 +4,12 @@ setTimer : 10,
 setCaut : 5,
 setStop : 10,
 
+//start traffic lights
 init : () => {
 	lts.timer = setInterval(lts.tickGrn, 1000);
 },
 
+//green light timer
 tickGrn : () => {
 count = lts.setTimer;
 
@@ -24,6 +26,7 @@ if(count > 0) {
 	}
 },
 
+//yellow light timer
 tickCaut : () => {
 count = lts.setCaut;
 
@@ -41,6 +44,7 @@ if(count > 0) {
 	}
 },
 
+//red light timer
 tickStop : () => {
 count = lts.setStop;
 
@@ -54,9 +58,11 @@ if(count > 0) {
 } else {
 	gTxt.textContent = "";
 	clear = clearInterval(lts.tickStop);
+	//restore the timers
 	lts.setTimer = 10;
 	lts.setCaut = 5;
 	lts.setStop = 10;
+	//restart traffic lights
 	lts.tickGrn();
 	}
 },
