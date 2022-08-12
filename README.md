@@ -1,3 +1,3 @@
 # Traffic Lights / Semáforo
 
-FrontEnd practice
+FrontEnd practice, using OOP/POO.
