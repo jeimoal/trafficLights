@@ -1,1 +1,3 @@
-# trafficLights
+# Traffic Lights / Semáforo
+
+FrontEnd practice
