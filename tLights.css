@@ -11,6 +11,11 @@ html {
 	justify-content: center;
 }
 
+.actTxt {
+	position: absolute;
+	font-size: 20px;
+}
+
 /*utilites end */
 
 .wrapper {
@@ -53,6 +58,7 @@ h1 {
 }
 
 #green {
+	position: relative;
 	margin-top: 3em;
 	background: linear-gradient(to top, #00ff00 0%, #ffff00 150%);
 }
